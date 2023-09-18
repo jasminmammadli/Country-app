@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <header class="white">
+        <div class="container">
+            <div class="head">
+                <div class="founder">
+                    <p class="black">Country finder</p>
+                    <span class="black">By Yasaman Mammadli</span>
+                </div>
+                <div class="dark-mode">
+                    <i class="fa-solid fa-moon black"></i><span class="black">Dark Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="data">
+                <div class="search white">
+                    <i class="fa-solid fa-magnifying-glass black"></i><input type="text" id="inp" oninput="searchingCountry()"
+                        placeholder="Search for a country" class="white" />
+                </div>
+                <div class="filter">
+                    <div class="text-icon white select-shadow shadow-remove">
+                        <span class="black">Filter by Region</span>
+                        <i class="fa-solid fa-angle-down black"></i>
+                    </div>
+                    <div id="select-country" class="visible-bar white select-shadow shadow-remove"></div>
+                </div>
+            </div>
+            <div class="countries"></div>
+        </div>
+    </main>
+    <script src="./assets/code.js"></script>
+</body>
+
+</html>
